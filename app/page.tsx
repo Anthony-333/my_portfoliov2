@@ -3,15 +3,22 @@ import Image from "next/image";
 import LeftSide from "@/src/components/LeftSide";
 import MainContent from "@/src/components/MainContent";
 import RightSide from "@/src/components/RightSide";
+import Particlesbg from "@/src/components/Particlesbg";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <div className="flex justify-between">
-        <LeftSide />
-        <MainContent />
-        <RightSide />
+    <main className="h-screen relative">
+      <div className="w-full h-full absolute z-10">
+        <Navbar />
+        <div className="flex justify-between h-full">
+          <LeftSide />
+          <MainContent />
+          <RightSide />
+        </div>
+      </div>
+
+      <div className="fixed z-0">
+        <Particlesbg />
       </div>
     </main>
   );
