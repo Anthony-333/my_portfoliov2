@@ -4,13 +4,8 @@ import React from "react";
 import "../styles/navbar.css";
 import arrowDown from "react-useanimations/lib/arrowDown";
 import UseAnimations from "react-useanimations";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithub,
-  FaLinkedinIn,
-  FaArrowDown,
-} from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn, FaArrowDown } from "react-icons/fa";
+import { GrFacebookOption } from "react-icons/gr";
 
 function Navbar() {
   const [checked, setChecked] = React.useState<boolean>(false);
@@ -40,36 +35,36 @@ function Navbar() {
       <div className="flex items-center justify-between">
         {/* brand logo */}
         <div className="bg-red">
-          <p className="Brand_logo text-4xl text-white">AO</p>
+          <p className="Brand_logo text-xl sm:text-2xl text-white">AO</p>
         </div>
 
         {/* pages */}
-        <div className="hidden lg:block text-white font-semibold text-lg  ">
+        <div className="hidden lg:block text-white font-medium   ">
           <div className="flex space-x-5">
             <p
               className="cursor-pointer hover:text-transparent 
-            text-lg hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
+            text-sm hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
             hover:to-[#FE4ACC] tracking-[.08em]"
             >
               home
             </p>
             <p
               className="cursor-pointer hover:text-transparent 
-            text-lg hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
+            text-sm hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
             hover:to-[#FE4ACC] tracking-[.08em]"
             >
               about
             </p>
             <p
               className="cursor-pointer hover:text-transparent 
-            text-lg hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
+            text-sm hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
             hover:to-[#FE4ACC] tracking-[.08em]"
             >
               projects
             </p>
             <p
               className="cursor-pointer hover:text-transparent 
-            text-lg hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
+            text-sm hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1991FF]
             hover:to-[#FE4ACC] tracking-[.08em]"
             >
               services
@@ -93,17 +88,17 @@ function Navbar() {
 
         <div
           className="block bg-transparent hover:bg-gradient-to-r 
-      hover:from-[#1991FF] hover:to-[#FE4ACC] rounded-full p-1 cursor-pointer
+      hover:from-[#1991FF] hover:to-[#FE4ACC] rounded-full p-[2px] cursor-pointer
        hover:shadow-slate-600 hover:shadow-md "
         >
           <div
-            className=" bg-white px-3 py-2 rounded-full 
+            className=" bg-white px-2  rounded-full 
       "
           >
             <div className="flex">
               <button
                 className="font-extrabold text-transparent 
-        text-md bg-clip-text bg-gradient-to-r from-[#1991FF]
+        text-xs bg-clip-text bg-gradient-to-r from-[#1991FF]
         to-[#FE4ACC]"
               >
                 Hire me
@@ -112,7 +107,7 @@ function Navbar() {
               <UseAnimations
                 reverse={true}
                 animation={arrowDown}
-                size={30}
+                size={25}
                 strokeColor="#FE4ACC"
                 className="-rotate-90"
               />
@@ -122,7 +117,7 @@ function Navbar() {
       </div>
 
       <div className="flex lg:hidden justify-center space-x-10 text-2xl mt-5">
-        <FaFacebookF className="text-white hover:text-[#1991FF]" />
+        <GrFacebookOption className="text-white hover:text-[#1991FF]" />
         <FaTwitter className="text-white hover:text-[#7077EC]" />
         <FaGithub className="text-white hover:text-[#C05EDA]" />
         <FaLinkedinIn className="text-white hover:text-[#FE4ACC]" />

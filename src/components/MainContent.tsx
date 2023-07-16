@@ -1,6 +1,7 @@
 import React from "react";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";
+import Introduction from "./Introduction";
 
 const mainContent = () => {
   return (
@@ -8,8 +9,8 @@ const mainContent = () => {
       <LeftSide />
 
       {/* main content */}
-      <div className="bg-yellow-400 w-full">
-        <p>test</p>
+      <div className="w-full px-8 lg:px-20">
+          <Introduction />
       </div>
 
       <RightSide />
