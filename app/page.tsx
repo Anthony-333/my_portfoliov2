@@ -11,9 +11,7 @@ export default function Home() {
       <div className="w-full h-full absolute z-10">
         <Navbar />
         <div className="flex justify-between h-full">
-          <LeftSide />
           <MainContent />
-          <RightSide />
         </div>
       </div>
 
