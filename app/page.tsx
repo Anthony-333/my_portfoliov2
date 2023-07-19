@@ -7,15 +7,13 @@ import Particlesbg from "@/src/components/Particlesbg";
 
 export default function Home() {
   return (
-    <main className="h-screen relative">
-      <div className="w-full h-full absolute z-10">
+    <main className="h-screen w-screen relative">
+      <div className="w-full h-full absolute z-10 ">
         <Navbar />
-        <div className="flex justify-between h-full">
-          <MainContent />
-        </div>
+        <MainContent />
       </div>
 
-      <div className="fixed z-0">
+      <div className="fixed z-0 ">
         <Particlesbg />
       </div>
     </main>

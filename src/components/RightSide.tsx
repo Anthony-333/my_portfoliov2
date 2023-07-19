@@ -8,8 +8,6 @@ const rightSide = () => {
   return (
     <div className="w-[30px] lg:w-[100px] fixed right-0  h-full flex items-center">
       <div className="h-full w-full flex items-start justify-center lg:justify-end">
-        <p>t</p>
-
         <div className="fixed bottom-0 text-align">
           <p
             className="rotate-90 mb-4 font-extrabold text-transparent 

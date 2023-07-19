@@ -27,15 +27,15 @@ function Navbar() {
 
   return (
     <div
-      className={`z-20 sticky top-0 duration-300 ease-in-out  ${
-        scrollOffset >= 70 ? "bg-black" : "bg - transparent"
+      className={`z-50 fixed duration-300 ease-in-out  ${
+        scrollOffset >= 70 ? "bg-black" : "bg-transparent"
       }  w-full 
    p-6`}
     >
       <div className="flex items-center justify-between">
         {/* brand logo */}
-        <div className="bg-red">
-          <p className="Brand_logo text-xl sm:text-2xl text-white">AO</p>
+        <div className="bg-red flex items-center">
+          <p className="Brand_logo text-3xl sm:text-2xl text-white">AO</p>
         </div>
 
         {/* pages */}
@@ -88,17 +88,17 @@ function Navbar() {
 
         <div
           className="block bg-transparent hover:bg-gradient-to-r 
-      hover:from-[#1991FF] hover:to-[#FE4ACC] rounded-full p-[2px] cursor-pointer
+      hover:from-[#1991FF] hover:to-[#FE4ACC] rounded-full p-[3px] cursor-pointer
        hover:shadow-slate-600 hover:shadow-md "
         >
           <div
-            className=" bg-white px-2  rounded-full 
+            className=" bg-white px-3 py-2  rounded-full 
       "
           >
             <div className="flex">
               <button
                 className="font-extrabold text-transparent 
-        text-xs bg-clip-text bg-gradient-to-r from-[#1991FF]
+        text-md bg-clip-text bg-gradient-to-r from-[#1991FF]
         to-[#FE4ACC]"
               >
                 Hire me

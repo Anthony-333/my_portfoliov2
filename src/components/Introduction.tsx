@@ -11,46 +11,42 @@ const Introduction = () => {
   const text1 = "Full Stack Dev";
   const text2 = "3D Animator";
   return (
-    <div className="flex  lg:justify-evenly items-center">
+    <div className="flex lg:justify-evenly items-center">
       <div>
         <div className="flex">
-          <p className="animate-rubberBand text-white flex-wrap font-semibold text-2xl sm:text-5xl">
+          <p className="animate-rubberBand text-white flex-wrap font-semibold text-4xl sm:text-5xl">
             Hi,
           </p>
         </div>
         <div>
-          <p className="text-white font-semibold text-2xl sm:text-5xl">
+          <p className="text-white font-semibold text-4xl sm:text-5xl">
             I&apos;m Anthony
           </p>
         </div>
 
         <div className="flex">
-          {text1.split("").map((letter, index) => (
-            <p
-              key={index}
-              className="animate-rubberBand  flex-wrap font-semibold text-2xl sm:text-5xl
-            text-transparent  bg-clip-text bg-gradient-to-r from-[#1991FF] to-[#FE4ACC]"
-            >
-              {letter === " " ? "\u00A0" : letter}
-            </p>
-          ))}
+          <p className="flex flex-wrap font-semibold text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#1991FF] to-[#FE4ACC]">
+            {text1.split("").map((letter, index) => (
+              <span key={index} className="animate-rubberBand">
+                {letter === " " ? "\u00A0" : letter}
+              </span>
+            ))}
+          </p>
         </div>
 
         <div className="flex items-center">
-          <p className="text-white flex-wrap font-semibold text-2xl sm:text-5xl mr-4">
+          <p className="text-white flex-wrap font-semibold text-4xl sm:text-5xl mr-4">
             And
           </p>
 
           <div className="flex">
-            {text2.split("").map((letter, index) => (
-              <p
-                key={index}
-                className="animate-rubberBand  flex-wrap font-semibold text-2xl sm:text-5xl
-            text-transparent  bg-clip-text bg-gradient-to-r from-[#1991FF] to-[#FE4ACC]"
-              >
-                {letter === " " ? "\u00A0" : letter}
-              </p>
-            ))}
+            <p className="flex flex-wrap font-semibold text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#1991FF] to-[#FE4ACC]">
+              {text2.split("").map((letter, index) => (
+                <span key={index} className="animate-rubberBand">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </p>
           </div>
         </div>
 
@@ -65,13 +61,15 @@ const Introduction = () => {
       "
             >
               <div className="flex">
-                <button
+                <a
+                  href="/Resume.pdf"
+                  download="Resume"
                   className="font-extrabold text-transparent 
-        text-sm bg-clip-text bg-gradient-to-r from-[#1991FF]
+        text-lg bg-clip-text bg-gradient-to-r from-[#1991FF]
         to-[#FE4ACC]"
                 >
                   Resume
-                </button>
+                </a>
 
                 <UseAnimations
                   reverse={true}
